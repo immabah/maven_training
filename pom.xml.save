@@ -13,13 +13,18 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
- 	
-	 <junit.version>5.8.1</junit.version>
-  	<assertj.version>3.21.0</assertj.version>
+	
 
-  	<maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
-  	<jacoco-maven-plugin.version>0.8.7</jacoco-maven-plugin.version>
     </properties>
+
+    <properties> <!-- balise existante -->
+  ...
+  <junit.version>5.8.1</junit.version>
+  <assertj.version>3.21.0</assertj.version>
+
+  <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+  <jacoco-maven-plugin.version>0.8.7</jacoco-maven-plugin.version>
+</properties>
 
 	<dependencies>
     <dependency>
@@ -35,8 +40,8 @@
         <scope>test</scope>
     </dependency>
 </dependencies>
-
-	<build>
+	
+<build>
     <pluginManagement>
         <plugins>
             <plugin>
@@ -71,4 +76,5 @@
         </plugin>
     </plugins>
 </build>
+
 </project>
